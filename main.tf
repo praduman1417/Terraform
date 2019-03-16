@@ -7,7 +7,7 @@ provider "aws" {
 resource "aws_instance" "instance" {
     ami = "${var.instance_ami}"
     instance_type = "${var.instance_type}"
-    vpc_security_group_ids
+    
     
   
 }
@@ -23,6 +23,10 @@ resource "aws_security_group" "public_security_group" {
    ingress 
 }
 
+
+resource "aws_security_group" "public_security_group" {
+   ingress 
+}
 
 
 
