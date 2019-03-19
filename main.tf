@@ -12,18 +12,3 @@ resource "aws_instance" "instance" {
   
 }
 
-
-resource "aws_subnet" "public_subnet1" {
-     availability_zone = "${var.public_subnet1}"
-     cidr_block = "10.10.0.0/28"
-}
-
-
-resource "aws_security_group" "public_security_group" {
-   ingress 
-}
-
-
-
-PRADUMAN 
-
