@@ -7,6 +7,7 @@ provider "aws" {
 resource "aws_instance" "web_instance" {
     ami = "${var.instance_ami}"
     instance_type = "${var.instance_type}"
+    vpc_security_group_ids= "${aws_security_group.web_security_group.id}"
     
     user_data= <<EOF
               #! /bin/bash
@@ -29,7 +30,7 @@ resource "aws_security_group" "web_security_group" {
         from_port=  80
         to_port = 80
         protocol = "tcp"
-        CIDR_blocks = ["0.0.0.0/0"]
+        cidr_blocks = ["0.0.0.0/0"]
     }
 
 }
