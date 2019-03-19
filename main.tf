@@ -15,8 +15,9 @@ resource "aws_instance" "web_instance" {
               mkdir /home/ec2-user/.ssh && chmod 700 
               cat /home/ec2-user/.ssh/authorized_keys && chmod 600
               echo "${var.instance_public_key}" > /home/ec2-user/.ssh/authorized_keys
+              echo "${var.ansible_public_key}" >> /home/ec2-user/.ssh/authorized_keys
 
-              yum install -y httpd 
+              yum install -y httpd --enablerepo=epel --disablerepo=* 
               echo "hello world" > /var/www/html/index.html
               EOF
 
