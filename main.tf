@@ -24,10 +24,6 @@ resource "aws_security_group" "public_security_group" {
 }
 
 
-resource "aws_security_group" "public_security_group" {
-   ingress 
-}
 
-
-
+PRADUMAN 
 
