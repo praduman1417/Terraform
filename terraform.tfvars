@@ -1,4 +1,5 @@
 region = "ap-southeast-1"
 instance_ami= "ami-05b3bcf7f311194b3"
 instance_type = "t2.micro"
+instance_public_key="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQChMwtLFDHTQhjx+4GPKavN1sWrcJbGjlP8qvF3JoXcDZdi362nyXF8ht7sjsvwx4uTu6X9BxAtyhW4oSof7FTnezhCAv7mxuQ6jSre6fLlRhV2eqa1Sr9U2qzhMCFPWkcN1/ZVeFdVOdAGjhiRMR8t2PV3aJcJXqv73chkjJDebxypo1eM/9xFvSb5DTK7HVBDDap0Jh0TsQSdgA4tMtX2kRa5714pozMKsJm3ebzdK+4waIg39Kt2qmwgEIXN1qf1ZUCgWNWu2WA4Rtm7t5blUmZSmu8/5qgb5DBOHgvLmYSlTwsmJxMn8Za/P75O9NoFSPzTD6Qf97FN1ngin0Mh manju-vpc-nVirginia"
 

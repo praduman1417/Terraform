@@ -5,7 +5,7 @@ variable "region" {
 #variable "secret_key" {}
 
 #### instance details ####
-
+variable "instance_public_key" {}
 variable "instance_ami" {}
 variable "instance_type" {}
 
