@@ -4,10 +4,13 @@ provider "aws" {
     region = "${var.region}"
 }
 
-resource "aws_instance" "instance" {
+resource "aws_instance" "web_instance" {
     ami = "${var.instance_ami}"
     instance_type = "${var.instance_type}"
-    
+    tags= {
+
+        Name="tf_web_instance"
+    }
     
   
 }
