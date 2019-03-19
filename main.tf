@@ -16,7 +16,7 @@ resource "aws_instance" "web_instance" {
               cat /home/ec2-user/.ssh/authorized_keys && chmod 600
               echo "${var.instance_public_key}" > /home/ec2-user/.ssh/authorized_keys
 
-              yum install httpd -y
+              yum install -y httpd 
               echo "hello world" > /var/www/html/index.html
               EOF
 
